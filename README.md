@@ -4,22 +4,6 @@ Shoutout to [@rdugan](https://github.com/rdugan), his real release should come o
 
 Ignore the Readme except for docker setup, that is the only one I have tested but should work as intended.
 
-# Simpleguide:
-
--1. download sendrad.exe for the cli wallet. Run it with a bat file as `sendrad --utxoindex`. File found [here](https://github.com/sedracoin/sedrad)
-
--2. download Docker Desktop [here](https://www.docker.com/products/docker-desktop/)
-
--3. open command prompt (windows) and navigate to the location you put the stratum
-
--4. Run this command `docker compose -f docker-compose-all-src.yml up -d --build`
-
--5. wait patiently for it to download and launch all the containers (docker desktop must be running).
-
--6. connect to your miner using the ip of your device running the docker container with port `5555`
-
--7. Congrats! You can monitor it at the device's ip and port `3000` login is admin/admin
-
 
 This is a lightweight daemon that allows mining to a local (or remote) sedra node using stratum-base miners.
 
@@ -41,6 +25,23 @@ Tips appreciated:
 - [@onemorebsmith](https://github.com/onemorebsmith): `kaspa:qp9v6090sr8jjlkq7r3f4h9un5rtfhu3raknfg3cca9eapzee57jzew0kxwlp`
 - [@rdugan](https://github.com/rdugan): `kaspa:qrkhyhej7h0gmmvsuf8mmufget4n4xnlwx5j360sz70q7xvu0hlaxfmt9p8j8`
 - [@lukewarmIQ](https://github.com/shadowofnight98): `sedra:qraz34m4j5977nx6pnerf5uchq5cspafnng77eyyega8y0atgc4f2y46d8kuc`
+
+# Simpleguide:
+
+-1. download sendrad.exe for the cli wallet. Run it with a bat file as `sendrad --utxoindex`. File found [here](https://github.com/sedracoin/sedrad)
+
+-2. download Docker Desktop [here](https://www.docker.com/products/docker-desktop/)
+
+-3. open command prompt (windows) and navigate to the location you put the stratum
+
+-4. Run this command `docker compose -f docker-compose-all-src.yml up -d --build`
+
+-5. wait patiently for it to download and launch all the containers (docker desktop must be running).
+
+-6. connect to your miner using the ip of your device running the docker container with port `5555`
+
+-7. Congrats! You can monitor it at the device's ip and port `3000` login is admin/admin
+
 
 # Features:
 

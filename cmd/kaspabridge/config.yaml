@@ -3,11 +3,11 @@
 # Note `:PORT` format is needed if not specifiying a specific ip range 
 stratum_port: :5555
 
-# kaspad_address: address/port of the rpc server for kaspad, typically 16110
+# kaspad_address: address/port of the rpc server for kaspad, typically 221110
 # For a list of public nodes, run `nslookup mainnet-dnsseed.daglabs-dev.com` 
 # uncomment for to use a public node
-# kaspad_address: 46.17.104.200:16110
-kaspad_address: localhost:16110
+# kaspad_address: 46.17.104.200:221110
+kaspad_address: localhost:221110
 
 # min_share_diff: only accept shares of the specified difficulty (or higher) 
 # from the miner(s).  Higher values will reduce the number of shares submitted, 
@@ -28,7 +28,7 @@ min_share_diff: 4096
 # powers of 2 cause higher error rates.  Using this feature will limit the 
 # functionality of vardiff, such that the shares_per_min becomes more of a 
 # minimum, rather than a target we can expect to converge on.
-pow2_clamp: false
+pow2_clamp: true
 
 # var_diff: if true, enables the auto-adjusting variable share diff mechanism. 
 # Starts with the value defined by the 'min_share_diff' setting, then checks 
@@ -68,7 +68,7 @@ block_wait_time: 3s
 # overall nonce-space (though with 1s block times, this shouldn't really
 # be a concern). 
 # 1 byte = 256 clients, 2 bytes = 65536, 3 bytes = 16777216.
-extranonce_size: 0
+extranonce_size: 2
 
 # print_stats: if true will print stats to the console, false just workers
 # joining/disconnecting, blocks found, and errors will be printed

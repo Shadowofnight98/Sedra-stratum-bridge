@@ -1,6 +1,6 @@
 # Sendra (definitely not kaspa) Stratum Adapter
 
-Shoudout to [@rdugan](https://github.com/rdugan), his real release should come out soon
+Shoutout to [@rdugan](https://github.com/rdugan), his real release should come out soon
 
 This is a lightweight daemon that allows mining to a local (or remote) sedra node using stratum-base miners.
 

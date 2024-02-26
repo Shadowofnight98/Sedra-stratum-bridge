@@ -2,6 +2,17 @@
 
 Shoutout to [@rdugan](https://github.com/rdugan), his real release should come out soon
 
+Ignore the Readme except for docker setup, that is the only one I have tested but should work as intended.
+
+Simpleguide:
+-1. download sendrad.exe for the cli wallet. Run it with a bat file as `sendrad --utxoindex`. File found [here](https://github.com/sedracoin/sedrad)
+-2. download Docker Desktop [here](https://www.docker.com/products/docker-desktop/)
+-3. open command prompt (windows) and navigate to the location you put the stratum
+-4. Run this command `docker compose -f docker-compose-all-src.yml up -d --build`
+-5. wait patiently for it to download and launch all the containers (docker desktop must be running).
+-6. connect to your miner using the ip of your device running the docker container with port `5555`
+-7. Congrats! You can monitor it at the device's ip and port `3000` login is admin/admin
+
 This is a lightweight daemon that allows mining to a local (or remote) sedra node using stratum-base miners.
 
 This daemon is confirmed working with the miners below in both sedra-only and dual-mining modes (for those that support it) on Windows/MacOs/Linux/HiveOs.

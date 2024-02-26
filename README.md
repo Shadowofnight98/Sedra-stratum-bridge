@@ -4,7 +4,8 @@ Shoutout to [@rdugan](https://github.com/rdugan), his real release should come o
 
 Ignore the Readme except for docker setup, that is the only one I have tested but should work as intended.
 
-Simpleguide:
+# Simpleguide:
+
 -1. download sendrad.exe for the cli wallet. Run it with a bat file as `sendrad --utxoindex`. File found [here](https://github.com/sedracoin/sedrad)
 
 -2. download Docker Desktop [here](https://www.docker.com/products/docker-desktop/)

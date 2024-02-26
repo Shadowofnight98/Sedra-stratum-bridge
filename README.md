@@ -1,8 +1,10 @@
 # Sendra (definitely not kaspa) Stratum Adapter
 
-This is a lightweight daemon that allows mining to a local (or remote) kaspa node using stratum-base miners.
+Shoudout to @rdugan, his real release should come out soon
 
-This daemon is confirmed working with the miners below in both kaspa-only and dual-mining modes (for those that support it) on Windows/MacOs/Linux/HiveOs.
+This is a lightweight daemon that allows mining to a local (or remote) sedra node using stratum-base miners.
+
+This daemon is confirmed working with the miners below in both sedra-only and dual-mining modes (for those that support it) on Windows/MacOs/Linux/HiveOs.
 * bzminer
 * lolminer
 * srbminer

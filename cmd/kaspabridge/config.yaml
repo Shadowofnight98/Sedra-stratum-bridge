@@ -6,6 +6,7 @@ stratum_port: :5555
 # kaspad_address: address/port of the rpc server for kaspad, typically 22110
 # For a list of public nodes, run `nslookup mainnet-dnsseed.daglabs-dev.com` 
 # uncomment for to use a public node
+#Fixed the Address issue
 # kaspad_address: 46.17.104.200:22110
 kaspad_address: localhost:22110
 

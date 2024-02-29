@@ -5,7 +5,7 @@ services:
     build:
       context: .
       no_cache: true
-    container_name: ks_bridge
+    container_name: SDR_bridge
     restart: unless-stopped
     user: "0"
     command:

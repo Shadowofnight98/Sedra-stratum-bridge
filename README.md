@@ -152,11 +152,11 @@ Configuration for the bridge is done via the [config.yaml](cmd/kaspabridge/confi
 # Note `:PORT` format is needed if not specifiying a specific ip range 
 stratum_port: :5555
 
-# kaspad_address: address/port of the rpc server for kaspad, typically 16110
+# sedrad_address: address/port of the rpc server for kaspad, typically 22110
 # For a list of public nodes, run `nslookup mainnet-dnsseed.daglabs-dev.com` 
 # uncomment for to use a public node
-# kaspad_address: 46.17.104.200:16110
-kaspad_address: localhost:16110
+# sedrad_address: 46.17.104.200:22110
+sedrad_address: localhost:22110
 
 # min_share_diff: only accept shares of the specified difficulty (or higher) 
 # from the miner(s).  Higher values will reduce the number of shares submitted, 
@@ -242,7 +242,7 @@ Config parameters can also be specificied by command line flags, which have slig
   - '-stats=false' # include stats readout every 10s in log
   - '-stratum=:5555' # port to which miners should connect
   - '-prom=:2114' # port at which raw prometheus stats will be available
-  - '-kaspa=host.docker.internal:16110' # host/port at which kaspad node is running
+  - '-kaspa=host.docker.internal:22110' # host/port at which kaspad node is running
   - '-mindiff=64' # minimum share difficulty to accept from miner(s)
   - '-vardiff=true' # enable auto-adjusting variable min diff
   - '-pow2clamp=false' # limit diff to 2^n (e.g. 64, 128, 256, etc)
